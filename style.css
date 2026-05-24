@@ -8,15 +8,15 @@
 
 :root {
   --white:          #FFFFFF;
-  --off-white:      #FAF6EF;
+  --off-white:      #F7F3EE;
   --bark:           #2C1508;
   --bark-mid:       #3D1F0D;
   --bark-light:     #5C3317;
-  --amber:          #C4952A;
-  --amber-hover:    #A87F22;
-  --amber-light:    #FDF4E3;
-  --tan:            #E8D5B0;
-  --tan-light:      #F5EDD9;
+  --amber:          #B8722A;
+  --amber-hover:    #9E601C;
+  --amber-light:    #F2E7D5;
+  --tan:            #DCBF98;
+  --tan-light:      #EDE0CC;
   --text-primary:   #2C1508;
   --text-secondary: #7A5A3F;
   --text-muted:     #A08060;
@@ -54,7 +54,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 .btn:hover { transform: translateY(-1px); }
 .btn-primary { background: var(--amber); color: var(--white); border-color: var(--amber); }
-.btn-primary:hover { background: var(--amber-hover); border-color: var(--amber-hover); box-shadow: 0 4px 16px rgba(196,149,42,0.35); }
+.btn-primary:hover { background: var(--amber-hover); border-color: var(--amber-hover); box-shadow: 0 4px 16px rgba(184,114,42,0.35); }
 .btn-outline { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.65); }
 .btn-outline:hover { background: var(--white); color: var(--bark); border-color: var(--white); }
 .btn-ghost-dark { background: transparent; color: var(--bark); border-color: var(--bark); }
