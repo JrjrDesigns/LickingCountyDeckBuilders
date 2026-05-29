@@ -981,3 +981,71 @@ textarea { resize: vertical; min-height: 90px; }
 .footer-col {}
 .guide-content {}
 .process-step {}
+
+/* ── BEFORE / AFTER ───────────────────────────────────────── */
+.before-after-section {
+  background: var(--dark);
+  padding: 72px 0;
+}
+.ba-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.ba-card {
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.ba-card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+}
+.ba-label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 5px 12px;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+}
+.ba-label.before {
+  background: rgba(20,18,16,0.85);
+  color: rgba(232,220,200,0.8);
+}
+.ba-label.after {
+  background: var(--tan);
+  color: var(--dark-deep);
+}
+.ba-caption {
+  background: var(--dark-mid);
+  padding: 16px 20px;
+  border-top: 1px solid var(--dark-line);
+}
+.ba-caption strong {
+  display: block;
+  font-size: 14px;
+  color: var(--light-text);
+  font-weight: normal;
+  margin-bottom: 3px;
+}
+.ba-caption span {
+  font-size: 12px;
+  color: var(--dim-text);
+}
+
+/* ── GALLERY PREVIEW ──────────────────────────────────────── */
+.gallery-cta {
+  text-align: center;
+  margin-top: 28px;
+}
+
+@media (max-width: 700px) {
+  .ba-grid { grid-template-columns: 1fr; }
+  .ba-card img { height: 260px; }
+}
