@@ -360,7 +360,7 @@ textarea { resize: vertical; min-height: 90px; }
 .page-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(20,18,16,0.93) 0%, rgba(20,18,16,0.75) 55%, rgba(20,18,16,0.45) 100%);
+  background: linear-gradient(to right, rgba(36,22,10,0.86) 0%, rgba(32,20,10,0.64) 55%, rgba(28,18,8,0.36) 100%);
 }
 .page-hero-inner {
   position: relative;
