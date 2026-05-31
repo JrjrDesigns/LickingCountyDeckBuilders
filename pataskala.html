@@ -220,7 +220,7 @@
       <div class="form-card">
         <h3>Request Your Free Estimate</h3>
         <p>We respond within one business day.</p>
-        <form action="https://james-francis.app.n8n.cloud/webhook/lcdb-estimate" method="POST" aria-label="Estimate request form">
+        <form action="https://james-francis.app.n8n.cloud/webhook/42e35bc1-07a7-427d-8658-20cf65c8b82d" method="POST" aria-label="Estimate request form">
           <div class="form-grid">
             <div class="form-group"><label for="pataskala-first">First Name</label><input type="text" id="pataskala-first" name="first_name" placeholder="John" required autocomplete="given-name"></div>
             <div class="form-group"><label for="pataskala-last">Last Name</label><input type="text" id="pataskala-last" name="last_name" placeholder="Smith" required autocomplete="family-name"></div>
@@ -321,6 +321,22 @@
     });
   });
 })();
+</script>
+<script>
+document.querySelectorAll("form").forEach(function(form) {
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    var data = new FormData(form);
+    fetch("https://james-francis.app.n8n.cloud/webhook/42e35bc1-07a7-427d-8658-20cf65c8b82d", {
+      method: "POST",
+      body: new URLSearchParams(data)
+    }).then(function() {
+      window.location.href = "https://lickingcountydeckbuilders.com/thank-you.html";
+    }).catch(function() {
+      window.location.href = "https://lickingcountydeckbuilders.com/thank-you.html";
+    });
+  });
+});
 </script>
 </body>
 </html>

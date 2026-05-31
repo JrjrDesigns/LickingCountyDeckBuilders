@@ -109,7 +109,7 @@
       <p class="hero-card-label">Free Estimate — No Obligation</p>
       <h2>Tell Us About Your Project</h2>
       <p>We respond within one business day and can typically schedule an on-site visit within the week.</p>
-      <form action="https://james-francis.app.n8n.cloud/webhook/lcdb-estimate" method="POST" aria-label="Estimate request form">
+      <form action="https://james-francis.app.n8n.cloud/webhook/42e35bc1-07a7-427d-8658-20cf65c8b82d" method="POST" aria-label="Estimate request form">
           <div class="form-grid">
             <div class="form-group"><label for="hero-first">First Name</label><input type="text" id="hero-first" name="first_name" placeholder="John" required autocomplete="given-name"></div>
             <div class="form-group"><label for="hero-last">Last Name</label><input type="text" id="hero-last" name="last_name" placeholder="Smith" required autocomplete="family-name"></div>
@@ -142,7 +142,7 @@
     <div class="form-card">
       <h3>Get a Free Estimate</h3>
       <p>We respond within one business day.</p>
-      <form action="https://james-francis.app.n8n.cloud/webhook/lcdb-estimate" method="POST" aria-label="Estimate request form">
+      <form action="https://james-francis.app.n8n.cloud/webhook/42e35bc1-07a7-427d-8658-20cf65c8b82d" method="POST" aria-label="Estimate request form">
           <div class="form-grid">
             <div class="form-group"><label for="mob-first">First Name</label><input type="text" id="mob-first" name="first_name" placeholder="John" required autocomplete="given-name"></div>
             <div class="form-group"><label for="mob-last">Last Name</label><input type="text" id="mob-last" name="last_name" placeholder="Smith" required autocomplete="family-name"></div>
@@ -434,7 +434,7 @@
       <div class="form-card">
         <h3>Request Your Free Estimate</h3>
         <p>We respond within one business day.</p>
-        <form action="https://james-francis.app.n8n.cloud/webhook/lcdb-estimate" method="POST" aria-label="Estimate request form">
+        <form action="https://james-francis.app.n8n.cloud/webhook/42e35bc1-07a7-427d-8658-20cf65c8b82d" method="POST" aria-label="Estimate request form">
           <div class="form-grid">
             <div class="form-group"><label for="idx-first">First Name</label><input type="text" id="idx-first" name="first_name" placeholder="John" required autocomplete="given-name"></div>
             <div class="form-group"><label for="idx-last">Last Name</label><input type="text" id="idx-last" name="last_name" placeholder="Smith" required autocomplete="family-name"></div>
@@ -535,6 +535,22 @@
     });
   });
 })();
+</script>
+<script>
+document.querySelectorAll("form").forEach(function(form) {
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    var data = new FormData(form);
+    fetch("https://james-francis.app.n8n.cloud/webhook/42e35bc1-07a7-427d-8658-20cf65c8b82d", {
+      method: "POST",
+      body: new URLSearchParams(data)
+    }).then(function() {
+      window.location.href = "https://lickingcountydeckbuilders.com/thank-you.html";
+    }).catch(function() {
+      window.location.href = "https://lickingcountydeckbuilders.com/thank-you.html";
+    });
+  });
+});
 </script>
 </body>
 </html>
