@@ -59,38 +59,32 @@
 </section>
 
 <section class="section">
-  <div class="section-inner" style="max-width:800px">
-
-    <p class="section-p" style="color:var(--muted-text);font-size:14px">Last updated: June 2026</p>
-
+  <div class="section-inner narrow-center">
+    <p class="section-p" style="color:var(--dim-text);font-size:14px">Last updated: June 2026</p>
     <p class="section-p">This website is operated by <strong>Trailmark Operations LLC</strong>. By using this website, you agree to the following terms. If you do not agree, please do not use the site.</p>
 
-    <h2 class="section-h2" style="font-size:1.4rem;margin-top:2rem">Use of This Site</h2>
+    <h2 class="section-h2">Use of This Site</h2>
     <p class="section-p">This website provides information about deck building, repair, and replacement services in Licking County, Ohio. You may use this site for lawful purposes only. You may not use it in any way that damages, disrupts, or interferes with its operation, or that violates any applicable law.</p>
 
-    <h2 class="section-h2" style="font-size:1.4rem;margin-top:2rem">No Contractor-Client Relationship</h2>
+    <h2 class="section-h2">No Contractor-Client Relationship</h2>
     <p class="section-p">Submitting an estimate request form on this site does not create a contractor-client relationship, a binding contract, or any obligation on the part of Trailmark Operations LLC to perform services. A formal agreement is only established through a signed written contract.</p>
 
-    <h2 class="section-h2" style="font-size:1.4rem;margin-top:2rem">Accuracy of Information</h2>
+    <h2 class="section-h2">Accuracy of Information</h2>
     <p class="section-p">We make reasonable efforts to keep the information on this site accurate and current. However, pricing ranges, timelines, permit requirements, and other details are provided for general informational purposes and may vary based on your specific project. Always confirm details directly with us before making decisions.</p>
 
-    <h2 class="section-h2" style="font-size:1.4rem;margin-top:2rem">Intellectual Property</h2>
+    <h2 class="section-h2">Intellectual Property</h2>
     <p class="section-p">All content on this site — including text, images, logos, and design — is the property of Trailmark Operations LLC or its licensors. You may not reproduce, distribute, or use any content from this site without prior written permission.</p>
 
-    <h2 class="section-h2" style="font-size:1.4rem;margin-top:2rem">Limitation of Liability</h2>
+    <h2 class="section-h2">Limitation of Liability</h2>
     <p class="section-p">Trailmark Operations LLC is not liable for any damages arising from your use of this website or reliance on any information contained herein. The site is provided on an "as is" basis without warranties of any kind.</p>
 
-    <h2 class="section-h2" style="font-size:1.4rem;margin-top:2rem">Governing Law</h2>
+    <h2 class="section-h2">Governing Law</h2>
     <p class="section-p">These terms are governed by the laws of the State of Ohio. Any disputes arising from use of this site shall be resolved in the appropriate courts of Licking County, Ohio.</p>
 
-    <h2 class="section-h2" style="font-size:1.4rem;margin-top:2rem">Contact</h2>
-    <p class="section-p">Questions about these terms can be directed to:</p>
-    <p class="section-p">
-      <strong>Trailmark Operations LLC</strong><br>
-      <a href="mailto:james.francis@trailmarkoperations.com">james.francis@trailmarkoperations.com</a><br>
-      <a href="tel:7405270222">(740) 527-0222</a>
-    </p>
-
+    <h2 class="section-h2">Contact</h2>
+    <p class="section-p"><strong>Trailmark Operations LLC</strong><br>
+    <a href="mailto:james.francis@trailmarkoperations.com">james.francis@trailmarkoperations.com</a><br>
+    <a href="tel:7405270222">(740) 527-0222</a></p>
   </div>
 </section>
 
@@ -102,7 +96,7 @@
     </div>
     <div class="cta-actions">
       <a href="tel:7405270222" class="cta-phone">(740) 527-0222</a>
-      <a href="/#estimate" class="btn btn-primary btn-lg">Get Free Estimate</a>
+      <a href="#estimate" class="btn btn-primary btn-lg">Get Free Estimate</a>
     </div>
   </div>
 </section>
@@ -155,12 +149,7 @@
 (function(){
   var burger=document.querySelector('.nav-burger');
   var drawer=document.querySelector('.nav-mobile');
-  if(burger&&drawer){
-    burger.addEventListener('click',function(){
-      var open=drawer.classList.toggle('is-open');
-      burger.setAttribute('aria-expanded',open);
-    });
-  }
+  if(burger&&drawer){burger.addEventListener('click',function(){var open=drawer.classList.toggle('is-open');burger.setAttribute('aria-expanded',open);});}
 })();
 </script>
 </body>
