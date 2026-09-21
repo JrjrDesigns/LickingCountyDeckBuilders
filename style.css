@@ -1054,3 +1054,49 @@ textarea { resize: vertical; min-height: 90px; }
   .ba-grid { grid-template-columns: 1fr; }
   .ba-card img { height: 260px; }
 }
+
+/* ============================================
+   MOBILE STICKY CALL BAR (<=1024px only)
+   Additive - hidden on desktop, no layout impact above 1024px.
+   Ported from Newark Elite Roofing 2026-09-18.
+   Contrast: #C8A878 bg / #141210 text = 8.30:1
+   ============================================ */
+.mobile-call-bar { display: none; }
+
+@media (max-width: 1024px) {
+  .mobile-call-bar {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1200;
+    background: var(--tan);
+    box-shadow: 0 -4px 18px rgba(0,0,0,0.22);
+    border-top: 2px solid var(--tan-dark);
+  }
+  .mobile-call-bar a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 58px;
+    padding: 10px 16px;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: var(--dark);
+    text-decoration: none;
+    border: none;
+  }
+  .mobile-call-bar a:active { background: var(--tan-dark); }
+  .mobile-call-bar svg { flex-shrink: 0; }
+  /* keep the fixed bar from covering footer legal links.
+     Both selectors listed: this site's footer may be <footer> or <footer class="site-footer">.
+     Appended last in the file, so it wins the specificity tie against the earlier rule. */
+  footer,
+  .site-footer { padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
+}
